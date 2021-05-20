@@ -1,7 +1,7 @@
 ## Day Ten / 30 days of React challenge / 
 
 <p  align="center">
-<img  src="https://media.giphy.com/media/5wG597QP1fjG7xIfte/giphy.gif"  height="240" alt="cake">
+<img  src="https://media.giphy.com/media/l0Hepe9XVa2aVshAk/giphy.gif"  height="240" alt="shop">
 </p>
 
 ## Features :unicorn: 
