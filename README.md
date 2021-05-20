@@ -1,16 +1,13 @@
-## Day Nine / 30 days of React challenge / Patisserie
+## Day Ten / 30 days of React challenge / 
 
 <p  align="center">
-<img  src="https://media.giphy.com/media/wvITTwZ3BeJiM/giphy.gif"  height="240" alt="cake">
+<img  src="https://media.giphy.com/media/5wG597QP1fjG7xIfte/giphy.gif"  height="240" alt="cake">
 </p>
 
 ## Features :unicorn: 
-* Order a cake or coffee
-* Pay the bill 
+* List products
+* Add productos to cart
 
 ## Technologies :mag_right:
 * React :sparkles:
 * Css :nail_care:
-
-#
-Inspired by: ["Self Sevice Cafe"](https://github.com/graceaveris/React.js_self_service_cafe_POS_system) of [@graceaveris](https://github.com/graceaveris)
