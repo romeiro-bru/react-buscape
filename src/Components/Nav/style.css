@@ -1,0 +1,16 @@
+nav {
+  min-height: 5rem;
+  background-color: #fdcf0e;
+  margin: 0;
+  overflow: hidden;
+}
+
+h1,
+h3 {
+  color: #81b0f1;
+}
+nav img {
+  display: flex;
+  width: 7rem;
+  margin: 0px 0px -8px 10px;
+}

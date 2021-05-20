@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+
+body {
+  background: #f2f2f2;
+  color: #444444;
+}
+
+.App {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+.cards {
+  list-style: none;
+  padding: 1rem;
+  border-radius: 4px;
+  background: white;
+  margin: 13px 5px;
+  box-shadow: #d6d6d6 0px 1px 4px 1px;
+}
+
+.cards p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.heart {
+  font-size: 1.5rem;
+  color: #fdcf0e;
+  margin: 5px 0 -5px 5px;
+}
+
+.green-text {
+  color: #50b447;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.card-prices {
+  border-top: 1.4px solid #ebe8e8;
+  margin: 10px 5px;
+}
+
+.arrow-tag {
+  display: flex;
+}
+
+.arrow-tag p {
+  background-color: #1c8ee2;
+  width: 6.5rem;
+  padding: 7.8px 2px 7.8px 1px;
+  color: white;
+  border-radius: 4px;
+  font-size: 0.6rem;
+  font-weight: 500;
+}
+
+.arrow-tag img {
+  width: 1.6rem;
+  position: relative;
+  margin-left: -13.3px;
+}
+
+.card-prices span {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.cards button {
+  padding: 10px 8px;
+  border: none;
+  border-radius: 3px;
+  margin: 10px 20px;
+  background: #50b447;
+  color: white;
+}
+
+.arrow {
+  margin: 2px 0 -2px 5px;
+}
