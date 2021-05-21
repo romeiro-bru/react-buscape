@@ -36,6 +36,40 @@ body {
   width: 1.9rem;
 }
 
+.products {
+  font-weight: bold;
+  text-align: left;
+}
+.products p {
+  color: black;
+}
+
+.product p {
+  color: white;
+}
+.product {
+  position: relative;
+  padding: 1rem 2rem;
+  margin: 0.1rem 0;
+  background: rgba(0, 0, 0, 0.12);
+}
+.product button {
+  position: absolute;
+  border: none;
+  background: transparent;
+  color: black;
+  font-weight: bold;
+  font-size: 1.4rem;
+  top: 7px;
+  right: 18px;
+}
+
+.subtotal {
+  padding: 0.2rem;
+  border-bottom: 1px solid black;
+  text-align: right;
+}
+
 ul {
   padding: 0;
 }

@@ -21,20 +21,22 @@ export default function App() {
     <div className="App">
       <Nav />
       <div className="container">
-        <section className="product">
+        <section className="products">
           <span className="amount">
             <img src={circle} alt="circle" />
             <span className="amount-text">{amount}</span>
           </span>
-          <br />
-          Items:
           <ul>
             {products.map((item, index) => (
-              <li key={index}>
+              <li className="product" key={index}>
+                <button>X</button>
                 <p>{item}</p>
               </li>
             ))}
           </ul>
+          <div className="subtotal">
+            <p>subtotal</p>
+          </div>
         </section>
 
         <ul>
