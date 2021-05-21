@@ -9,11 +9,15 @@ import { useState } from "react";
 
 export default function App() {
   const [products, setProducts] = useState([]);
+  const [subtotal, setSubtotal] = useState(0);
   const [amount, setAMount] = useState(0);
 
   const handleAdd = (e) => {
     setProducts([...products, `${e.target.name} R$ ${e.target.value}`]);
-    console.log(e.target.value);
+
+    const itemPrice = Number.parseFloat(e.target.value);
+    const finalBill = Number.parseFloat(subtotal) + itemPrice;
+    setSubtotal(finalBill);
 
     setAMount(amount + 1);
   };
@@ -37,6 +41,7 @@ export default function App() {
           <div className="subtotal">
             <p>subtotal</p>
           </div>
+          <p className="subtotal-value">ou R$ {subtotal} à vista</p>
         </section>
 
         <ul>

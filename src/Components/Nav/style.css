@@ -1,5 +1,5 @@
 nav {
-  min-height: 5rem;
+  min-height: 4rem;
   background-color: #fdcf0e;
   margin: 0;
   overflow: hidden;
@@ -11,6 +11,6 @@ h3 {
 }
 nav .logo {
   display: flex;
-  width: 8rem;
+  width: 7.8rem;
   margin: 0px 0px -8px 10px;
 }
