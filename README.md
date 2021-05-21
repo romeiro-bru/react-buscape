@@ -1,4 +1,4 @@
-## Day Ten / 30 days of React challenge / 
+## Day Ten / 30 days of React challenge / Buscapé Challenge
 
 <p  align="center">
 <img  src="https://media.giphy.com/media/l0Hepe9XVa2aVshAk/giphy.gif"  height="240" alt="shop">
