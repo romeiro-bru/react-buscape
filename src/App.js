@@ -13,17 +13,17 @@ export default function App() {
   const [amount, setAMount] = useState(0);
 
   const handleAdd = (e) => {
-    setProducts([...products, `${e.target.name} R$ ${e.target.value}`]);
+    setProducts([...products, e.target.name]);
 
     const itemPrice = Number.parseFloat(e.target.value);
-    const finalBill = Number.parseFloat(subtotal) + itemPrice;
+    const finalBill = subtotal + itemPrice;
     setSubtotal(finalBill);
 
     setAMount(amount + 1);
   };
 
-  const handleRemoveItem = (e) => {
-    console.log(`Remove ${e.target.name}`);
+  const handleRemoveItem = (itemIndex) => {
+    setProducts(products.filter((_, index) => index !== itemIndex));
   };
 
   return (
@@ -38,7 +38,9 @@ export default function App() {
           <ul>
             {products.map((item, index) => (
               <li className="product" key={index}>
-                <button onClick={handleRemoveItem}>X</button>
+                <button value={index} onClick={() => handleRemoveItem(index)}>
+                  X
+                </button>
                 <p>{item}</p>
               </li>
             ))}
