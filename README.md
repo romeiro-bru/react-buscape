@@ -5,9 +5,8 @@
 </p>
 
 ## Features :unicorn: 
-* List products
 * Add productos to cart
-* Check product price
+* Check products price
 * Remove products from cart
 
 ## Technologies :mag_right:
