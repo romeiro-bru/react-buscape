@@ -7,6 +7,7 @@
 ## Features :unicorn: 
 * List products
 * Add productos to cart
+* Check product price
 
 ## Technologies :mag_right:
 * React :sparkles:
