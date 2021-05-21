@@ -8,6 +8,7 @@
 * List products
 * Add productos to cart
 * Check product price
+* Remove products from cart
 
 ## Technologies :mag_right:
 * React :sparkles:
