@@ -10,7 +10,7 @@ import { useState } from "react";
 export default function App() {
   const [products, setProducts] = useState([]);
   const [subtotal, setSubtotal] = useState(0);
-  const [amount, setAMount] = useState(0);
+  const [amount, setAmount] = useState(0);
 
   const handleAdd = (e) => {
     setProducts([...products, e.target.name]);
@@ -19,11 +19,12 @@ export default function App() {
     const finalBill = subtotal + itemPrice;
     setSubtotal(finalBill);
 
-    setAMount(amount + 1);
+    setAmount(amount + 1);
   };
 
   const handleRemoveItem = (itemIndex) => {
     setProducts(products.filter((_, index) => index !== itemIndex));
+    setAmount(amount - 1);
   };
 
   return (
