@@ -21,6 +21,11 @@ export default function App() {
 
     setAMount(amount + 1);
   };
+
+  const handleRemoveItem = (e) => {
+    console.log(`Remove ${e.target.name}`);
+  };
+
   return (
     <div className="App">
       <Nav />
@@ -33,7 +38,7 @@ export default function App() {
           <ul>
             {products.map((item, index) => (
               <li className="product" key={index}>
-                <button>X</button>
+                <button onClick={handleRemoveItem}>X</button>
                 <p>{item}</p>
               </li>
             ))}
@@ -41,6 +46,7 @@ export default function App() {
           <div className="subtotal">
             <p>subtotal</p>
           </div>
+          <p className="subtotal-value">10x R$ {subtotal / 10}</p>
           <p className="subtotal-value">ou R$ {subtotal} à vista</p>
         </section>
 
