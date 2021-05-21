@@ -5,7 +5,7 @@ import "./style.css";
 export function Nav() {
   return (
     <nav>
-      <img src={logo} alt="logo" />
+      <img src={logo} alt="logo" className="logo" />
     </nav>
   );
 }

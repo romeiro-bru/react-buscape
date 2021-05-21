@@ -9,7 +9,7 @@ h1,
 h3 {
   color: #81b0f1;
 }
-nav img {
+nav .logo {
   display: flex;
   width: 7rem;
   margin: 0px 0px -8px 10px;
