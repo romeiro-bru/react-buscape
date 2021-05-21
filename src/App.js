@@ -8,11 +8,11 @@ import circle from "./red-circle.svg";
 import { useState } from "react";
 
 export default function App() {
-  const [product, setProduct] = useState([]);
+  const [products, setProducts] = useState([]);
   const [amount, setAMount] = useState(0);
 
   const handleAdd = (e) => {
-    setProduct([...product, `${e.target.name} R$ ${e.target.value}`]);
+    setProducts([...products, `${e.target.name} R$ ${e.target.value}`]);
     console.log(e.target.value);
 
     setAMount(amount + 1);
@@ -27,7 +27,14 @@ export default function App() {
             <span className="amount-text">{amount}</span>
           </span>
           <br />
-          {product}
+          Items:
+          <ul>
+            {products.map((item, index) => (
+              <li key={index}>
+                <p>{item}</p>
+              </li>
+            ))}
+          </ul>
         </section>
 
         <ul>
