@@ -2,7 +2,7 @@
 
 body {
   background: #f2f2f2;
-  color: #444444;
+  color: black;
   margin: 0;
 }
 
@@ -36,17 +36,15 @@ body {
   width: 1.9rem;
 }
 
-.products {
+.cart {
   font-weight: bold;
   text-align: left;
 }
-.products p {
-  color: black;
-}
 
-.product p {
+.cart-name {
   color: white;
 }
+
 .product {
   position: relative;
   padding: 1rem 2rem;
@@ -57,7 +55,6 @@ body {
   position: absolute;
   border: none;
   background: transparent;
-  color: black;
   font-weight: bold;
   font-size: 1.4rem;
   top: 7px;
