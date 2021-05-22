@@ -85,7 +85,12 @@ ul {
   box-shadow: #d6d6d6 0px 1px 4px 1px;
 }
 
-.cards p {
+.product-img {
+  padding: 1rem;
+  border: 1px solid pink;
+}
+
+.product-name {
   font-size: 1.5rem;
   font-weight: 500;
 }
@@ -96,13 +101,25 @@ ul {
   margin: 5px 0 -5px 5px;
 }
 
-.green-text {
+.installments,
+.price {
   color: #50b447;
   font-weight: 600;
-  font-size: 1.5rem;
 }
 
-.card-prices {
+.installments {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.installment-value {
+  font-size: 2.2rem;
+  margin-right: 0;
+}
+
+.product-prices {
   border-top: 1.4px solid #ebe8e8;
   margin: 10px 5px;
 }
@@ -127,16 +144,11 @@ ul {
   margin-left: -13.3px;
 }
 
-.card-prices span {
-  font-weight: 500;
-  font-size: 1.1rem;
-}
-
 .cards button {
   padding: 10px 8px;
   border: none;
   border-radius: 3px;
-  margin: 10px 20px;
+  margin: 0 5px;
   background: #50b447;
   color: white;
   cursor: pointer;

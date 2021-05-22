@@ -1,29 +1,36 @@
-import "./styles.css";
-import { Nav } from "./Components/Nav/Nav";
+import { useEffect, useState } from "react";
 import data from "./Data/data.json";
+import { Nav } from "./Components/Nav/Nav";
+import "./styles.css";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import arrowr from "./right-arrow.svg";
 import circle from "./red-circle.svg";
-import { useState } from "react";
 
 export default function App() {
-  const [products, setProducts] = useState([]);
+  const [response, setResponse] = useState([]);
+  const [cart, setCart] = useState([]);
   const [subtotal, setSubtotal] = useState(0);
   const [amount, setAmount] = useState(0);
 
-  const handleAdd = (e) => {
-    setProducts([...products, e.target.name]);
+  useEffect(() => {
+    setResponse(data);
+  }, []);
+  // console.log(response[0]);
 
-    const itemPrice = Number.parseFloat(e.target.value);
+  const handleAdd = (item) => {
+    console.log(item.product.name);
+    setCart([...cart, item]);
+
+    const itemPrice = Number.parseFloat(item.product.price.value);
     const finalBill = subtotal + itemPrice;
+    console.log(itemPrice, finalBill);
     setSubtotal(finalBill);
-
     setAmount(amount + 1);
   };
 
   const handleRemoveItem = (itemIndex) => {
-    setProducts(products.filter((_, index) => index !== itemIndex));
+    setCart(cart.filter((_, index) => index !== itemIndex));
     setAmount(amount - 1);
   };
 
@@ -37,53 +44,62 @@ export default function App() {
             <span className="amount-text">{amount}</span>
           </span>
           <ul>
-            {products.map((item, index) => (
+            {cart.map((item, index) => (
               <li className="product" key={index}>
                 <button value={index} onClick={() => handleRemoveItem(index)}>
                   X
                 </button>
-                <p>{item}</p>
+                <p>{item.product.name}</p>
+                <p>
+                  {item.product.price.installments}x R${" "}
+                  {item.product.price.installmentValue}
+                </p>
+                <p>ou R$ {item.product.price.value} à vista</p>
               </li>
             ))}
           </ul>
           <div className="subtotal">
             <p>subtotal</p>
           </div>
-          <p className="subtotal-value">10x R$ {subtotal / 10}</p>
+          <p className="subtotal-value"></p>
           <p className="subtotal-value">ou R$ {subtotal} à vista</p>
         </section>
 
         <ul>
-          {data.map((item, index) => (
+          {response.map((item, index) => (
             <li key={index} className="cards">
-              <p>
+              <section className="product-img"></section>
+              <p className="product-name">
                 {item.product.name} <IoMdHeartEmpty className="heart" />
               </p>
-              <span className="green-text">
-                {item.product.price.installments}x R${" "}
-                {item.product.price.installmentValue}
-              </span>
 
-              <div className="card-prices">
+              <div className="product-prices">
                 <div className="arrow-tag">
                   <p>MELHOR PREÇO</p>
                   <img src={arrowr} alt="arrow" />
                 </div>
+
+                <p className="installments">
+                  {item.product.price.installments}x R${" "}
+                  <span className="installment-value">
+                    {" "}
+                    {item.product.price.installmentValue}
+                  </span>
+                  <button
+                    value={item}
+                    type="submit"
+                    onClick={() => handleAdd(item)}
+                  >
+                    Adicionar ao carrinho
+                    <IoIosArrowForward className="arrow" />
+                  </button>
+                </p>
+
                 <span>
                   ou{" "}
-                  <span className="green-text">
-                    R$ {item.product.price.value}
-                  </span>{" "}
-                  à vista
+                  <span className="price">R$ {item.product.price.value}</span> à
+                  vista
                 </span>
-                <button
-                  value={item.product.price.value}
-                  name={item.product.name}
-                  onClick={handleAdd}
-                >
-                  Adicionar ao carrinho
-                  <IoIosArrowForward className="arrow" />
-                </button>
               </div>
             </li>
           ))}
