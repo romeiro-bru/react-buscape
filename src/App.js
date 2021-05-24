@@ -32,9 +32,17 @@ export default function App() {
     setInstallment(instSum);
   };
 
-  const handleRemoveItem = (itemIndex) => {
+  const handleRemoveItem = (item, itemIndex) => {
     setCart(cart.filter((_, index) => index !== itemIndex));
     setAmount(amount - 1);
+
+    const itemPrice = Number.parseFloat(item.product.price.value);
+    const finalBill = subtotal - itemPrice;
+    setSubtotal(finalBill);
+
+    const inst = Number.parseFloat(item.product.price.installmentValue);
+    const instRemove = installment - inst;
+    setInstallment(instRemove);
   };
 
   return (
@@ -48,8 +56,11 @@ export default function App() {
           </span>
           <ul>
             {cart.map((item, index) => (
-              <li className="product" key={index}>
-                <button value={index} onClick={() => handleRemoveItem(index)}>
+              <li className="cart-product" key={index}>
+                <button
+                  value={index}
+                  onClick={() => handleRemoveItem(item, index)}
+                >
                   X
                 </button>
                 <p className="cart-name">{item.product.name}</p>
