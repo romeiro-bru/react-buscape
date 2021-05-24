@@ -59,6 +59,7 @@ body {
   font-size: 1.4rem;
   top: 7px;
   right: 18px;
+  outline: none;
 }
 
 .subtotal {
@@ -83,8 +84,11 @@ ul {
 }
 
 .product-img {
-  padding: 1rem;
-  border: 1px solid pink;
+  padding: 0.1rem;
+}
+
+.product-img img {
+  width: 9rem;
 }
 
 .product-name {
@@ -148,6 +152,7 @@ ul {
   margin: 0 5px;
   background: #50b447;
   color: white;
+  outline: none;
   cursor: pointer;
   transition: 0.3s;
 }
