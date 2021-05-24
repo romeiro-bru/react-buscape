@@ -18,6 +18,7 @@ export default function App() {
     setResponse(data);
   }, []);
   // console.log(response[0]);
+  //
 
   const handleAdd = (item) => {
     setCart([...cart, item]);
@@ -82,7 +83,9 @@ export default function App() {
         <ul>
           {response.map((item, index) => (
             <li key={index} className="cards">
-              <section className="product-img"></section>
+              <section className="product-img">
+                <img src={item.product.images} alt="img" />
+              </section>
               <p className="product-name">
                 {item.product.name} <IoMdHeartEmpty className="heart" />
               </p>
