@@ -18,8 +18,7 @@ export function Product() {
   useEffect(() => {
     setResponse(data);
   }, []);
-  // console.log(response[0]);
-  //
+  console.log(response[0]);
 
   const handleAdd = (item) => {
     setCart([...cart, item]);
@@ -62,12 +61,15 @@ export function Product() {
               >
                 X
               </button>
-              <p className="cart-name">{item.product.name}</p>
-              <p>
-                {item.product.price.installments}x R${" "}
-                {item.product.price.installmentValue}
-              </p>
-              <p>ou R$ {item.product.price.value} à vista</p>
+              <img src={item.product.images[0]} alt="img" />
+              <section className="cart-text">
+                <p className="cart-name">{item.product.name}</p>
+                <p>
+                  {item.product.price.installments}x R${" "}
+                  {item.product.price.installmentValue}
+                </p>
+                <p>ou R$ {item.product.price.value} à vista</p>
+              </section>
             </li>
           ))}
         </ul>
@@ -82,7 +84,17 @@ export function Product() {
         {response.map((item, index) => (
           <li key={index} className="cards">
             <section className="product-img">
-              <img src={item.product.images} alt="img" />
+              <section className="product-images">
+                {item.product.images.map((n, index) => (
+                  <img
+                    id="s-img"
+                    key={index}
+                    src={item.product.images[index]}
+                    alt="img"
+                  />
+                ))}
+              </section>
+              <img src={item.product.images[0]} alt="img" />
             </section>
 
             <section>

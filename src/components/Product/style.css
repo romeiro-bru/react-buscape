@@ -28,29 +28,48 @@
   text-align: left;
 }
 
-.cart-name {
-  color: white;
-}
-
 .cart-product {
+  display: flex;
   position: relative;
-  padding: 1rem 2rem;
+  padding: 1rem 0.9em 1.2rem 0.7rem;
   margin: 0.1rem 0;
   background: rgba(0, 0, 0, 0.12);
+  list-style: none;
+  font-size: 0.9rem;
+}
+
+.cart-product img {
+  align-self: center;
+  height: 4.2rem;
+  border: 1px solid black;
+  border-radius: 1px;
 }
 .cart-product button {
   position: absolute;
+  top: 7px;
+  right: 18px;
   border: none;
   background: transparent;
   font-weight: bold;
-  font-size: 1.4rem;
-  top: 7px;
-  right: 18px;
+  font-size: 1rem;
   outline: none;
 }
 
+.cart-text {
+  margin: 0 1rem;
+}
+
+.cart-name {
+  width: 20rem;
+  color: white;
+}
+
+.cart-text p {
+  margin: 0.3rem 0.4rem;
+}
+
 .subtotal {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #444444;
   text-align: right;
 }
 .subtotal-value {
@@ -63,7 +82,7 @@ ul {
 
 .cards {
   list-style: none;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 4px;
   background: white;
   margin: 1rem 0;
@@ -75,8 +94,30 @@ ul {
 
 .product-img {
   flex-grow: 1;
+
+  display: flex;
+  flex-wrap: wrap;
   align-self: center;
   padding: 0.1rem;
+}
+
+.product-images {
+  width: 1.9rem;
+  margin-right: 2rem;
+}
+
+.product-images :first-child {
+  border: 1px solid #f8da51 !important;
+}
+
+#s-img {
+  border-radius: 3px;
+  border: 1px solid #f2f2f2;
+  height: 1.9rem;
+}
+
+.product-images img {
+  height: 1rem;
 }
 
 .product-img img {
@@ -84,6 +125,7 @@ ul {
 }
 
 .product-name {
+  margin: 0;
   max-width: 36rem;
   text-align: left;
   color: #444444;
@@ -92,7 +134,7 @@ ul {
 }
 
 .heart {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #fdcf0e;
   margin: 5px 0 -5px 5px;
 }
@@ -128,7 +170,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
 
-  margin: 10px 5px 0px 5px;
+  margin: 14px 5px 0px 5px;
   border-top: 1.4px solid #ebe8e8;
 }
 
@@ -156,6 +198,7 @@ ul {
   flex-grow: 1;
   align-self: center;
   text-align-last: right;
+  margin-top: 1rem;
 }
 
 .cards button {
@@ -176,4 +219,26 @@ ul {
 
 .arrow {
   margin: 2px 0 -2px 5px;
+}
+
+@media (max-width: 640px) {
+  .cart-product img {
+    height: 3.5rem;
+  }
+
+  .cart-name {
+    width: 12rem;
+  }
+
+  .product-name,
+  .installments,
+  .heart {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .product-name {
+    width: 36rem;
+  }
 }
