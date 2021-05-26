@@ -2,25 +2,6 @@
   padding: 0.8rem 2rem;
 }
 
-.amount {
-  position: relative;
-}
-
-.amount-text {
-  position: absolute;
-  left: 0;
-  right: 0;
-  text-align: center;
-  bottom: 25%;
-  color: white;
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-.amount img {
-  width: 1.9rem;
-}
-
 .cart {
   font-weight: bold;
   text-align: left;
