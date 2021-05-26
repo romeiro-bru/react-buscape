@@ -8,15 +8,13 @@
 
 .amount-text {
   position: absolute;
-  z-index: 999;
-  margin: 0 auto;
   left: 0;
   right: 0;
   text-align: center;
-  bottom: 44%;
+  bottom: 25%;
   color: white;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .amount img {
@@ -121,7 +119,7 @@ ul {
 }
 
 .product-img img {
-  height: 9rem;
+  height: 10.5rem;
 }
 
 .card-info {
@@ -173,8 +171,8 @@ ul {
 .product-prices {
   display: flex;
   flex-wrap: wrap;
-
-  margin: 14px 5px 0px 5px;
+  padding: 0.3rem 0;
+  margin: 0.9rem 0.3rem 0 0.3rem;
   border-top: 1.4px solid #ebe8e8;
 }
 
@@ -232,6 +230,10 @@ ul {
 
   .cart-name {
     width: 12rem;
+  }
+
+  .card-product-button {
+    flex-grow: 0;
   }
 
   .product-name,

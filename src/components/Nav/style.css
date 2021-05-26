@@ -1,8 +1,7 @@
 nav {
-  min-height: 4rem;
+  display: flex;
+  min-height: 4.8rem;
   background-color: #fdcf0e;
-  margin: 0;
-  overflow: hidden;
 }
 
 h1,
@@ -10,7 +9,13 @@ h3 {
   color: #81b0f1;
 }
 nav .logo {
-  display: flex;
   width: 7.8rem;
   margin: 0px 0px -8px 10px;
+}
+
+nav .menu-btn {
+  position: absolute;
+  align-self: center;
+  right: 32px;
+  width: 1.7rem;
 }
