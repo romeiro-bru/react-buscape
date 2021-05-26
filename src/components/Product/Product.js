@@ -18,7 +18,7 @@ export function Product() {
   useEffect(() => {
     setResponse(data);
   }, []);
-  console.log(response[0]);
+  // console.log(response[0]);
 
   const handleAdd = (item) => {
     setCart([...cart, item]);
@@ -85,7 +85,7 @@ export function Product() {
           <li key={index} className="cards">
             <section className="product-img">
               <section className="product-images">
-                {item.product.images.map((n, index) => (
+                {item.product.images.map((_, index) => (
                   <img
                     id="s-img"
                     key={index}
@@ -97,7 +97,7 @@ export function Product() {
               <img src={item.product.images[0]} alt="img" />
             </section>
 
-            <section>
+            <section className="card-info">
               <p className="product-name">
                 {item.product.name} <IoMdHeartEmpty className="heart" />
               </p>
