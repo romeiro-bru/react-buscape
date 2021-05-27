@@ -15,7 +15,7 @@ export function Product() {
   const [subtotal, setSubtotal] = useState(0);
   const [installment, setInstallment] = useState(0);
   const [amount, setAmount] = useState(0);
-  const [showCart, setShowCart] = useState(true);
+  const [hideCart, setHideCart] = useState(true);
 
   useEffect(() => {
     setResponse(data);
@@ -46,10 +46,12 @@ export function Product() {
     const inst = Number.parseFloat(item.product.price.installmentValue);
     const instRemove = installment - inst;
     setInstallment(instRemove);
+
+    cart.length === 1 && setHideCart(true);
   };
 
-  const handleShowCart = () => {
-    showCart === true ? setShowCart(false) : setShowCart(true);
+  const handleToggleCart = () => {
+    hideCart ? setHideCart(false) : setHideCart(true);
   };
 
   return (
@@ -57,12 +59,12 @@ export function Product() {
       <Nav />
       <span hidden={amount === 0} className="amount">
         <img src={circle} alt="circle" />
-        <button onClick={handleShowCart} className="amount-text">
+        <button onClick={handleToggleCart} className="amount-text">
           {amount}
         </button>
       </span>
 
-      <section hidden={showCart} className="cart">
+      <section hidden={hideCart} className="cart">
         <ul>
           {cart.map((item, index) => (
             <li className="cart-product" key={index}>
