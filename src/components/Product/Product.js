@@ -49,36 +49,36 @@ export function Product() {
     <>
       <Nav amount={amount} />
 
-      <div className="container">
-        <section className="cart">
-          <ul>
-            {cart.map((item, index) => (
-              <li className="cart-product" key={index}>
-                <button
-                  value={index}
-                  onClick={() => handleRemoveItem(item, index)}
-                >
-                  X
-                </button>
-                <img src={item.product.images[0]} alt="img" />
-                <section className="cart-text">
-                  <p className="cart-name">{item.product.name}</p>
-                  <p>
-                    {item.product.price.installments}x R${" "}
-                    {item.product.price.installmentValue}
-                  </p>
-                  <p>ou R$ {item.product.price.value} à vista</p>
-                </section>
-              </li>
-            ))}
-          </ul>
-          <div className="subtotal">
-            <p>subtotal</p>
-          </div>
-          <p className="subtotal-value">10x R${installment}</p>
-          <p className="subtotal-value">ou R$ {subtotal} à vista</p>
-        </section>
+      <section hidden={amount === 0} className="cart">
+        <ul>
+          {cart.map((item, index) => (
+            <li className="cart-product" key={index}>
+              <button
+                value={index}
+                onClick={() => handleRemoveItem(item, index)}
+              >
+                X
+              </button>
+              <img src={item.product.images[0]} alt="img" />
+              <section className="cart-text">
+                <p className="cart-name">{item.product.name}</p>
+                <p>
+                  {item.product.price.installments}x R${" "}
+                  {item.product.price.installmentValue}
+                </p>
+                <p>ou R$ {item.product.price.value} à vista</p>
+              </section>
+            </li>
+          ))}
+        </ul>
+        <div className="subtotal">
+          <p>subtotal</p>
+        </div>
+        <p className="subtotal-value">10x R${installment}</p>
+        <p className="subtotal-value">ou R$ {subtotal} à vista</p>
+      </section>
 
+      <div className="container">
         <ul>
           {response.map((item, index) => (
             <li key={index} className="cards">

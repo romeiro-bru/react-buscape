@@ -3,6 +3,9 @@
 }
 
 .cart {
+  overflow: hidden;
+  background: #fdcf0e;
+  box-shadow: 0px 0px 8px 0px #868282;
   font-weight: bold;
   text-align: left;
 }
@@ -12,7 +15,7 @@
   position: relative;
   padding: 1rem 0.9em 1.2rem 0.7rem;
   margin: 0.1rem 0;
-  background: rgba(0, 0, 0, 0.12);
+  background: #c59e09;
   list-style: none;
   font-size: 0.9rem;
 }
@@ -45,6 +48,11 @@
 
 .cart-text p {
   margin: 0.3rem 0.4rem;
+}
+
+.subtotal,
+.subtotal-value {
+  margin: 0.3rem 1.3rem;
 }
 
 .subtotal {
