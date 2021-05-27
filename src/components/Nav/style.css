@@ -19,3 +19,30 @@ nav .menu-btn {
   right: 32px;
   width: 1.7rem;
 }
+
+.amount {
+  position: absolute;
+  right: 49px;
+  top: 4%;
+}
+
+.amount-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  bottom: 23%;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.amount img {
+  width: 1.4rem;
+}
+
+@media (max-width: 640px) {
+  .amount {
+    top: 6.3%;
+  }
+}
