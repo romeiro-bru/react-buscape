@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./logo-buscape.png";
+import logo from "./logo-buscape.svg";
 import menu from "./menu-button.svg";
 import "./style.css";
 

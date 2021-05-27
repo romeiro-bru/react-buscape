@@ -1,6 +1,6 @@
 nav {
   display: flex;
-  min-height: 4.8rem;
+  min-height: 7rem;
   background-color: #fdcf0e;
 }
 
@@ -23,7 +23,7 @@ nav .menu-btn {
 .amount {
   position: absolute;
   right: 49px;
-  top: 4%;
+  top: 6%;
 }
 
 .amount button {
@@ -55,6 +55,6 @@ nav .menu-btn {
 
 @media (max-width: 640px) {
   .amount {
-    top: 6.3%;
+    top: 9.3%;
   }
 }
