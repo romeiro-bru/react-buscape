@@ -31,6 +31,11 @@ nav .menu-btn {
   border: none;
   cursor: pointer;
   outline: none;
+  transition: 0.3s;
+}
+
+.amount button:hover {
+  opacity: 0.8;
 }
 
 .amount-text {
