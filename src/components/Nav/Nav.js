@@ -12,7 +12,7 @@ export function Nav({ amount }) {
 
       <span hidden={amount === 0} className="amount">
         <img src={circle} alt="circle" />
-        <span className="amount-text">{amount}</span>
+        <button className="amount-text">{amount}</button>
       </span>
     </nav>
   );
