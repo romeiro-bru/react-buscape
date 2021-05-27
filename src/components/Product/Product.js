@@ -7,6 +7,7 @@ import { Nav } from "../Nav/Nav";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import arrowr from "./right-arrow.svg";
+import circle from "./red-circle.svg";
 
 export function Product() {
   const [response, setResponse] = useState([]);
@@ -14,6 +15,7 @@ export function Product() {
   const [subtotal, setSubtotal] = useState(0);
   const [installment, setInstallment] = useState(0);
   const [amount, setAmount] = useState(0);
+  const [showCart, setShowCart] = useState(true);
 
   useEffect(() => {
     setResponse(data);
@@ -45,11 +47,22 @@ export function Product() {
     const instRemove = installment - inst;
     setInstallment(instRemove);
   };
+
+  const handleShowCart = () => {
+    showCart === true ? setShowCart(false) : setShowCart(true);
+  };
+
   return (
     <>
-      <Nav amount={amount} />
+      <Nav />
+      <span hidden={amount === 0} className="amount">
+        <img src={circle} alt="circle" />
+        <button onClick={handleShowCart} className="amount-text">
+          {amount}
+        </button>
+      </span>
 
-      <section hidden={amount === 0} className="cart">
+      <section hidden={showCart} className="cart">
         <ul>
           {cart.map((item, index) => (
             <li className="cart-product" key={index}>
