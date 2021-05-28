@@ -2,8 +2,6 @@ import React from "react";
 import { useEffect, useState } from "react";
 import data from "../../data/data.json";
 import "./style.css";
-import { Nav } from "../Nav/Nav";
-
 import { IoMdHeartEmpty } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import arrowr from "./right-arrow.svg";
@@ -56,7 +54,6 @@ export function Product() {
 
   return (
     <>
-      <Nav />
       <span hidden={amount === 0} className="amount">
         <img src={circle} alt="circle" />
         <button onClick={handleToggleCart} className="amount-text">
