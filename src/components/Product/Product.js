@@ -81,7 +81,7 @@ export function Product() {
                   {item.product.price.installments}x R${" "}
                   {item.product.price.installmentValue}
                 </p>
-                <p>ou R$ {item.product.price.value} à vista</p>
+                <p>ou R$ {item.product.price.value.toLocaleString()} à vista</p>
               </section>
             </li>
           ))}
@@ -90,7 +90,9 @@ export function Product() {
           <p>subtotal</p>
         </div>
         <p className="subtotal-value">10x R${installment}</p>
-        <p className="subtotal-value">ou R$ {subtotal} à vista</p>
+        <p className="subtotal-value">
+          ou R$ {subtotal.toLocaleString()} à vista
+        </p>
       </section>
 
       <div className="container">
@@ -126,14 +128,14 @@ export function Product() {
                     <span className="installments">
                       {item.product.price.installments}x R$
                       <span className="installment-value">
-                        {item.product.price.installmentValue}
+                        {item.product.price.installmentValue.toLocaleString()}
                       </span>
                     </span>
 
                     <span className="price-value">
                       ou{" "}
                       <span className="price">
-                        R$ {item.product.price.value}
+                        R$ {item.product.price.value.toLocaleString()}
                       </span>{" "}
                       à vista
                     </span>
