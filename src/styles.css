@@ -10,3 +10,8 @@ body {
   font-family: "Montserrat";
   text-align: center;
 }
+
+h1,
+h3 {
+  color: #81b0f1;
+}
