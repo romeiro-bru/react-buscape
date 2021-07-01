@@ -33,14 +33,10 @@ export function Product() {
     setCart(cart.filter((_, index) => index !== itemIndex));
     setAmount(amount - 1);
 
-    const itemPrice = Number.parseFloat(item.product.price.value);
-    const finalBill = subtotal - itemPrice;
-    setSubtotal(finalBill);
-
-    const inst = Number.parseFloat(item.product.price.installmentValue);
-    const instRemove = installment - inst;
-    setInstallment(instRemove);
-
+    setSubtotal(subtotal - Number.parseFloat(item.product.price.value));
+    setInstallment(
+      installment - Number.parseFloat(item.product.price.installmentValue)
+    );
     cart.length === 1 && setHideCart(true);
   };
 
