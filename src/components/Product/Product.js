@@ -23,13 +23,10 @@ export function Product() {
     setCart([...cart, item]);
     setAmount(amount + 1);
 
-    const itemPrice = Number.parseFloat(item.product.price.value);
-    const finalBill = subtotal + itemPrice;
-    setSubtotal(finalBill);
-
-    const inst = Number.parseFloat(item.product.price.installmentValue);
-    const instSum = installment + inst;
-    setInstallment(instSum);
+    setSubtotal(subtotal + Number.parseFloat(item.product.price.value));
+    setInstallment(
+      installment + Number.parseFloat(item.product.price.installmentValue)
+    );
   };
 
   const handleRemoveItem = (item, itemIndex) => {
