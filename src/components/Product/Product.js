@@ -4,8 +4,8 @@ import data from "../../data/data.json";
 import "./style.css";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
-import arrowr from "./right-arrow.svg";
-import circle from "./red-circle.svg";
+import arrowr from "../../../public/assets/images/right-arrow.svg";
+import circle from "../../../public/assets/images/red-circle.svg";
 
 export function Product() {
   const [response, setResponse] = useState([]);

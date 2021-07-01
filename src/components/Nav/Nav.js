@@ -1,6 +1,6 @@
 import React from "react";
-import logo from "./logo-buscape.svg";
-import menu from "./menu-button.svg";
+import logo from "../../../public/assets/images/logo-buscape.svg";
+import menu from "../../../public/assets/images/menu-button.svg";
 import "./style.css";
 
 export function Nav() {
