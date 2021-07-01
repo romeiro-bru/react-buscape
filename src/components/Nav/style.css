@@ -6,7 +6,7 @@ nav {
 
 nav .logo {
   width: 7.8rem;
-  margin: 0px 0px -8px 10px;
+  margin: 0px 0px 0px 10px;
 }
 
 nav .menu-btn {
@@ -14,6 +14,7 @@ nav .menu-btn {
   align-self: center;
   right: 32px;
   width: 1.7rem;
+  cursor: pointer;
 }
 
 .amount {

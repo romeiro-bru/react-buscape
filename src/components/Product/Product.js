@@ -18,7 +18,6 @@ export function Product() {
   useEffect(() => {
     setResponse(data);
   }, []);
-  // console.log(response[0]);
 
   const handleAdd = (item) => {
     setCart([...cart, item]);
