@@ -40,13 +40,13 @@ export function Product() {
     cart.length === 1 && setHideCart(true);
   };
 
-  const handleToggleCart = () => {
-    hideCart ? setHideCart(false) : setHideCart(true);
-  };
+  const handleToggleCart = () => setHideCart(!hideCart);
+
+  const hideAmount = amount === 0;
 
   return (
     <>
-      <span hidden={amount === 0} className="amount">
+      <span hidden={hideAmount} className="amount">
         <img src={circle} alt="circle" />
         <button onClick={handleToggleCart} className="amount-text">
           {amount}
