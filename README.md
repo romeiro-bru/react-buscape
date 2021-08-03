@@ -1,6 +1,7 @@
 ## Day Ten / 30 days of React challenge / Buscapé Challenge
 
-![Screenshot from 2021-07-29 20-14-40](https://user-images.githubusercontent.com/56081906/128100328-446cc756-20d0-4531-8027-90c5f89549ea.png)
+![Screenshot_from_2021-05-28_16-04-12](https://user-images.githubusercontent.com/56081906/128100392-1474ff98-9139-4d31-9bf9-9a01bade04b7.png)
+
 
 
 ## Features :unicorn: 
