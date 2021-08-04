@@ -25,7 +25,7 @@
                            <strong>[Git](https://git-scm.com/downloads)</strong>, 
                            <strong>[Yarn](https://yarnpkg.com/)</strong>.
 <br>
-```git clone https://github.com/romeiro-bru/react-cadastro-easy.git```
+```git clone https://github.com/romeiro-bru/react-buscape.git```
 
 Instalar dependências
 <br>
