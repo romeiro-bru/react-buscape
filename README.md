@@ -10,7 +10,7 @@
 
 
 
-## Features 👾
+## Funcionalidades 👾
 * Adicione produtos ao carrinho de compras
 * Verifique o preço total e produtos no carrinho
 * Remove protudos do carrinho
