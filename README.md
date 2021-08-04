@@ -31,7 +31,7 @@ Instalar dependências
 <br>
 ```yarn install```
 
-Execute o seguinte comando para iniciar a aplicação num ambiente de desenvolvimento:
+Execute o seguinte comando para iniciar a aplicação no ambiente de desenvolvimento:
 <br>
 ```yarn start```
 <br>
