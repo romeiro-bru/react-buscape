@@ -11,11 +11,11 @@
 
 
 ## Features 👾
-* Add productos to cart
-* Check products price
-* Remove products from cart
+* Adicione produtos ao carrinho de compras
+* Verifique o preço total e produtos no carrinho
+* Remove protudos do carrinho
 
-## Technologies :mag_right:
+## Tecnologias :mag_right:
 * React :sparkles:
 * Css :nail_care:
 
