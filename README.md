@@ -3,7 +3,7 @@
 > A aplicação permite adicionar produtos ao carrinho de compras, checar e remover produtos do carrinho.
 > <br>
 
-> [codesandbox](https://codesandbox.io/s/github/romeiro-bru/react-buscap)
+> [codesandbox do desafio](https://codesandbox.io/s/github/romeiro-bru/react-buscap)
 
 ![Screenshot_from_2021-05-28_16-04-12](https://user-images.githubusercontent.com/56081906/128100392-1474ff98-9139-4d31-9bf9-9a01bade04b7.png)
 
