@@ -2,13 +2,12 @@
 
 > A aplicação permite adicionar produtos ao carrinho de compras, checar e remover produtos do carrinho.
 > <br>
-
 > [codesandbox do desafio](https://codesandbox.io/s/dreamy-water-ndcpv)
 
-![Screenshot_from_2021-05-28_16-04-12](https://user-images.githubusercontent.com/56081906/128100392-1474ff98-9139-4d31-9bf9-9a01bade04b7.png)
 
-![Screenshot_from_2021-05-28_16-04-26](https://user-images.githubusercontent.com/56081906/128102542-d4c83a98-ca9b-4440-b2d3-c56f99b8b0e3.png)
-
+<span  align="center">
+  <img  src="https://user-images.githubusercontent.com/56081906/141358902-c7868418-5405-4fe3-8766-c47ff6526317.gif"  height="350" alt="buscape-gif">
+</span>
 
 ## Funcionalidades 👾
 * Adicione produtos ao carrinho de compras
