@@ -1,5 +1,11 @@
 <h1 align="center">Buscapé Challenge</h1>
 
+<p>
+  <img  src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"  height="25" alt="html">
+  <img  src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"  height="25" alt="css">
+  <img  src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"  height="25" alt="react">
+</p>
+
 > A aplicação permite adicionar produtos ao carrinho de compras, checar e remover produtos do carrinho.
 > <br>
 > [codesandbox do desafio](https://codesandbox.io/s/dreamy-water-ndcpv)
